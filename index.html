@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <!-- import needed documents-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="printstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Tab Title -->
+<title>Clayton Gravatt</title>
+</head>
+
+<body>
+    <!-- INTRO -->
+    <div class="intro">
+        <h1>Clayton Gravatt</h1>
+        <h3>Data Analytics</h3>
+        <h3>SUMMA CUM LAUDE</h3>
+    </div>
+    <hr class="intro-divider">
+
+    <div class="mobile-class">
+        
+        <!-- LEFT SPLIT -->
+        <div class="split left">
+
+            <!-- CONTACT INFORMATION -->
+            <div>
+                <h1>Contact Information</h1>
+                <hr>
+                <h3>
+                    <i class="material-icons">&#xe551;</i> <a href="tel:5309199324">530-919-9324</a><br>
+                    <i class="material-icons">&#xe0e1;</i> <a href="mailto:claytonmgravatt@gmail.com">ClaytonMGravatt@gmail.com</a> <br>
+                    <i class="material-icons">&#xe894;</i> <a href="https://github.com/claytonmgravatt" target="none">GitHub.com/ClaytonMGravatt</a> <br>
+                </h3>
+            </div>
+
+            <!-- ABOUT -->
+            <div>
+                <h1>About</h1>
+                <hr>
+                <p>
+                    Honors program Data Analytics major with a minor in Economics. Very motivated, highly analytical student that will graduate with a B.S. in June of 2021.
+                    I'm seeking to leverage my quantitative reasoning ability in conjunction with my software skills in the role of Data Analyst.
+                </p>
+            </div>
+
+            <!-- SKILLS -->
+            <div>
+                <h1>Skills</h1>
+                <hr>
+                <ul class="chart--horiz">
+                    <!-- SKILL #1 -->
+                    <li class="bar" style="width: 70%">
+                        SQL (Database Design, Applications, Modeling)
+                    </li>
+                    <br>
+                    <!-- SKILL #2 -->
+                    <li class="bar" style="width: 60%">
+                        SAS
+                    </li>
+                    <br>
+                    <!-- SKILL #3 -->
+                    <li class="bar" style="width: 94%">
+                        MICROSOFT EXCEL (Solver, Dashboards, PivotTables)
+                    </li>
+                    <br>
+                    <!-- SKILL #4 -->
+                    <li class="bar" style="width: 55%">
+                        PYTHON
+                    </li>
+                    <br>
+                    <!-- SKILL #5 -->
+                    <li class="bar" style="width: 85%">
+                        MINITAB
+                    </li>
+                    <br>
+                    <!-- SKILL #6 -->
+                    <li class="bar" style="width: 73%">
+                        MULTIVARIATE DATA ANALYSIS (Multiple Regression, Logistic Regression)
+                    </li>
+                    <br>
+                    <!-- SKILL #7 -->
+                    <li class="bar" style="width: 89%">
+                        TECHNICAL WRITING
+                    </li>
+                    <br>
+                    <!-- SKILL #8 -->
+                    <li class="bar" style="width: 58%">
+                        POWER BI
+                    </li>
+                    <br>
+                    <!-- SKILL #9 -->
+                    <li class="bar" style="width: 70%">
+                        DATA CLEANING
+                    </li>
+                    <br>
+                    <!-- SKILL #10 -->
+                    <li class="bar" style="width: 45%">
+                        MICROSOFT ACCESS
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SPLIT -->
+        <div class="split right">
+
+            <!-- EDUCATION -->
+            <div>
+                <h1>Education</h1>
+                <hr>
+
+                <h2 class="sub-header-darkblue">2021 Bachelor of Data Analytics </h2>
+                <h2 class="sub-header-gray">Eastern Washington University,<span style="color: #223541;font-weight: 700;"> Summa Cum Laude</span></h2>
+                
+                <h2 class="sub-header-darkblue">2018 A.A. in Interdisciplinary Studies: Math and Science</h2>
+                <h2 class="sub-header-gray">Folsom Lake College, <span style="color: #223541;font-weight: 700;">Valedictorian</span></h2>
+                
+                <h2 class="sub-header-darkblue">2016 High School Diploma</h2>
+                <h2 class="sub-header-gray">El Dorado High School</h2>
+                <br>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div>
+                <h1>Experience</h1>
+                <hr>
+                <h2 class="sub-header-darkblue">Opporunity Hack 2020 Volunteer Internship</h2>
+                <h2 class="sub-header-gray">Data Analysis Project</h2>
+                <p>
+                    Objective: Analyze popular culture trends on the web to determine ways to better introduce STEM/STEAM topics to children.
+                    <ul>
+                        <li>Gathered data via web scraping / API calls using Python</li>
+                        <li>Helped direct team of 5 volunteer interns / organized GitHub repository</li>
+                        <li>Provided data visualizations and analysis</li>
+                    </ul>
+                </p>
+                <br>
+                <h2 class="sub-header-darkblue">Multiple Regression University Project</h2>
+                <h2 class="sub-header-gray">Multivariate Analysis</h2>
+                <p>
+                    Objective: Perform multiple regression analysis on Framingham Heart Study dataset.
+                    <ul>
+                        <li>Prepared data for analysis in SAS(cleaning, sampling)</li>
+                        <li>Constructed and validated multiple regression model for predicting life expectancy</li>
+                        <li>Presented findings to non-statisically oriented audience</li>
+                    </ul>
+                </p>
+                <br>
+
+            </div>
+
+            <!-- DOWNLOAD PDF BUTTON -->
+            <a onclick="printFunction()" class="btn-downloadPdf">Download PDF</a>
+            <br class="noprint"><br class="noprint">
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- PRINT PAGE FOR "DOWNLOAD PDF" BUTTON JAVASCRIPT -->
+<script>
+    function printFunction() {
+        //Checks if browser is chrome (style sheet is only made for chrome right now)
+        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1 && !(navigator.userAgent.indexOf("Edg") != -1)
+        if(!is_chrome){ //if not chrome, alert user to use chrome if printed document looks weird
+            alert('If you have trouble viewing or printing this page, please consider using Chrome instead.');
+        }
+
+        window.print();
+    }
+</script>

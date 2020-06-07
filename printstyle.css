@@ -1,0 +1,48 @@
+@media print{
+
+    /*Puts white boarder around page*/
+    @page { 
+        margin: 10px; 
+    }
+
+    /* Intro (name, major, gpa) styles */
+    .intro{
+        background-color: whitesmoke;
+        color: #223541;
+
+        /*Makes sure colors print out correctly*/
+        -webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+    }
+
+    .intro h1{
+        font-size: 2em;
+    }
+
+    /*Adds padding between two columns*/
+    .split{
+        margin: 10px;
+    }
+
+    .right{
+        height: auto;
+        zoom: 85%; /*zoom up or down to fit content on page (keep consistent with .left zoom)*/
+    }
+
+    .left{
+        height: auto;
+        overflow-y: hidden;
+        zoom: 85%; /*zoom up or down to fit content on page (keep consistent with .right zoom)*/
+
+        /*Makes sure colors print out correctly*/
+        -webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+    }
+
+    /*DISABLED CSS*/
+    .noprint, .btn-downloadPdf, .btn-downloadPdf:hover{
+        display: none !important;
+    }
+}

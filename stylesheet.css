@@ -1,0 +1,210 @@
+/*----------- HTML TAG STYLES --------------*/
+
+/*Color Pallet*/
+:root{
+  --steelblue: #46718b; /*Dark blue header color*/
+  --brightblue: #457eb4; /*Link colors & Skill Gradient*/
+  --darkblue: #223541; /*Hover colors, intro header color & divider colors*/
+  --slateblue: #2d4a5b; /*Header, button & skill gradient colors*/
+  --lightgray: #bcbcbe; /*Intro background & bar hover color*/
+  --gray: #9a9ba5; /*gray sub header colors*/
+}
+
+html * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  color: var(--brightblue);
+  text-decoration: none;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, white 50%, var(--darkblue) 50%);
+  transition: background-position 0.3s;
+}
+
+/*Link hover animation*/
+a:hover {
+  background-size: 4px 50px;
+  background-color: var(--darkblue);
+  background-position: 0% -150%;
+}
+
+/*divider styles*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid var(--darkblue);
+  margin: 1em 0;
+  padding: 0;
+}
+
+h1{
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+  font-style: normal; 
+  font-variant: small-caps; 
+  font-size: 1.5em;
+  color: var(--slateblue);
+}
+
+h2{
+  line-height: 1em !important;
+}
+
+/*----------- OTHER STYLES ---------------*/
+
+/* Intro (name, major, gpa) styles */
+.intro{
+  text-align: center;
+  font-size: large;
+  line-height: 0.5em;
+  background-color: var(--lightgray);
+  color: white;
+  margin-bottom: -16px;
+  padding: 20px;
+}
+
+.intro h1{
+  font-size: 3em;
+  color: var(--darkblue);
+}
+
+.intro-divider{
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(74, 74, 75, 0.99);
+}
+
+/* Sub header font control */
+.sub-header-gray {
+    color: var(--gray); 
+    letter-spacing: .3em; 
+    font-weight: 600;
+    line-height: 0.5em;
+    font-size: 1em;
+}
+
+.sub-header-darkblue {
+  color: var(--steelblue); 
+  font-weight: 600;
+  line-height: 0.5em;
+  font-size: 1.4em;
+}
+
+/*------ BUTTON STYLES ---------*/
+.btn-downloadPdf {
+  background-color:var(--slateblue);
+  background-image: none;
+  position: fixed;
+  padding: 10px 5px 10px 5px;
+  margin: 15px;
+  color: white;
+  font-size:18px;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  box-shadow: 5px 10px rgba(136, 136, 136, 0.5);
+}
+
+.btn-downloadPdf:hover {
+  background-color:var(--darkblue);
+  box-shadow: 5px 6px rgba(54, 51, 51, 0.5);
+}
+
+/*-------- SPLIT STYLES ----------*/
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 47%;
+  position: absolute;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+  margin-left: 25px;
+}
+
+.right {
+  right: 0;
+  margin-right: 25px;
+}
+
+/*-------- BAR CHART STYLES -------*/
+.bar{
+  background-image: linear-gradient(to right, var(--slateblue) , var(--brightblue));
+  padding: 5px;
+  color: white;
+  list-style-type: none; 
+  margin-left: -40px;
+
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.bar:hover{
+  background-image: linear-gradient(to right, whitesmoke , var(--lightgray));
+  color: var(--darkblue);
+  padding: 10px;
+}
+
+/*Skills bar animation*/
+@keyframes move {
+  0% {
+    width: 15%;
+  }
+
+   100% {
+    /*If left blank, will inherit from css width property set in html document*/
+  }
+}
+
+/*-------- MOBILE STYLES ----------*/
+@media screen and (max-width: 1000px){
+  .mobile-class{
+    margin: 20px;
+  }
+
+  .split {
+      width: 100%;
+      position: static;
+      overflow: hidden;
+  }
+
+  .left{
+    overflow: wrap;
+    margin: 0px;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+
+  .right{
+    overflow: wrap;
+    margin: 0px;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+
+  .intro{
+    word-wrap: break-word;
+  }
+
+  .intro h1{
+    line-height: 1em;
+  }
+
+  .btn-downloadPdf {
+    position: unset;
+    width: 100%;
+    margin-bottom:50px;
+  }
+}
