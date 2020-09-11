@@ -61,17 +61,21 @@ h2{
 /* Intro (name, major, gpa) styles */
 .intro{
   text-align: center;
-  font-size: large;
+  font-size: .8em;
   line-height: 0.5em;
-  background-color: var(--lightgray);
-  color: white;
+  background-color: whitesmoke;
+  color: var(--slateblue);
   margin-bottom: -16px;
-  padding: 20px;
+  padding: 5px;
 }
 
 .intro h1{
   font-size: 3em;
   color: var(--darkblue);
+}
+
+.intro h2{
+  font-size: 1.3em;
 }
 
 .intro-divider{
