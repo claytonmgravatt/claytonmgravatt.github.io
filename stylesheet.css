@@ -23,7 +23,6 @@ a {
   color: var(--brightblue);
   text-decoration: none;
   background-size: 100% 200%;
-  border-radius: 5px;
   background-image: linear-gradient(to bottom, white 50%, var(--darkblue) 50%);
   transition: background-position 0.3s;
 }
@@ -143,7 +142,8 @@ h2{
   color: white;
   list-style-type: none; 
   margin-left: -40px;
-
+  border-radius: 20px;
+  
   animation-name: move;
   animation-duration: 1s;
   animation-timing-function: linear;
