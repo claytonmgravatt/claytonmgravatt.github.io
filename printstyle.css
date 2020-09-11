@@ -7,9 +7,6 @@
 
     /* Intro (name, major, gpa) styles */
     .intro{
-        background-color: whitesmoke;
-        color: #223541;
-
         /*Makes sure colors print out correctly*/
         -webkit-print-color-adjust: exact;
         -moz-print-color-adjust: exact;
