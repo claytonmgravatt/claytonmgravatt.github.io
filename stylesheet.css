@@ -29,14 +29,15 @@ a {
   text-decoration: none;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, white 50%, var(--darkblue) 50%);
-  transition: background-position 0.3s;
+  transition: background-position 0.5s;
 }
 
 /*Link hover animation*/
 a:hover {
-  background-size: 4px 50px;
+  background-size: 4px 0px;
   background-color: var(--darkblue);
   background-position: 0% -150%;
+  color: white;
 }
 
 /*divider styles*/
@@ -62,7 +63,6 @@ h1{
 h2{
   line-height: 1em !important;
   padding: 1px;
-  margin: 0px;
 }
 
 /*----------- OTHER STYLES ---------------*/

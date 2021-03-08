@@ -24,18 +24,26 @@
 
     .right{
         height: auto;
-        zoom: 85%; /*zoom up or down to fit content on page (keep consistent with .left zoom)*/
+        zoom: 80%; /*zoom up or down to fit content on page (keep consistent with .left zoom)*/
     }
 
     .left{
         height: auto;
         overflow-y: hidden;
-        zoom: 85%; /*zoom up or down to fit content on page (keep consistent with .right zoom)*/
+        zoom: 80%; /*zoom up or down to fit content on page (keep consistent with .right zoom)*/
 
         /*Makes sure colors print out correctly*/
         -webkit-print-color-adjust: exact;
         -moz-print-color-adjust: exact;
         -ms-print-color-adjust: exact;
+    }
+
+    h2{
+        margin: 8px;
+      }
+
+    ul{
+        margin: 5px;
     }
 
     /*DISABLED CSS*/
